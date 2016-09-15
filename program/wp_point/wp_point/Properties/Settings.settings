@@ -1,0 +1,65 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="_wp_point.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RequestChunkSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="SSLVerify" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="APIMemberImportURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/set</Value>
+    </Setting>
+    <Setting Name="APIMemberExportURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/get</Value>
+    </Setting>
+    <Setting Name="POINTCARDConnString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=localhost;Initial Catalog=POINTCARD;User ID=sa;Password=12345678&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=localhost;Initial Catalog=POINTCARD;User ID=sa;Password=12345678</Value>
+    </Setting>
+    <Setting Name="PrinterCorpCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">9013:OA推進センター,9021:金沢まいもん寿司</Value>
+    </Setting>
+    <Setting Name="PrinterTempoCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0001:吹田グリーンプレイス店</Value>
+    </Setting>
+    <Setting Name="APIAuthQRCodeURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/auth</Value>
+    </Setting>
+    <Setting Name="APICheckEmailURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/search</Value>
+    </Setting>
+    <Setting Name="WpPointCardBackUp_Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="APIAddressSearchURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://www.waitingpass.com/heishirou/member/api/zip</Value>
+    </Setting>
+    <Setting Name="WP_PCARDIF_Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\GitProject\maimon-suita\program\wp_point\WP_PCARDIF\bin\Debug\WP_PCARDIF.exe</Value>
+    </Setting>
+    <Setting Name="WP_UPLOAD_POINT_Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\GitProject\maimon-suita\program\wp_point\wp_upload_point\bin\Debug\wp_upload_point.exe</Value>
+    </Setting>
+    <Setting Name="PointCardMemoryDataFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\WPPointCard\Data\CSV移動元フォルダ</Value>
+    </Setting>
+    <Setting Name="PointCardMemoryDataFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">901300101</Value>
+    </Setting>
+    <Setting Name="QRCodeFixedString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">XBJUJOH</Value>
+    </Setting>
+    <Setting Name="APIMemberMergeURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/merge</Value>
+    </Setting>
+    <Setting Name="APIAuthShopURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/shop/auth</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

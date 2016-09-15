@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="_wp_upload_point.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UseProxy" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SSLVerify" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SleepPerRequest" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.5</Value>
+    </Setting>
+    <Setting Name="ProxyUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">xxxxxxxxxx</Value>
+    </Setting>
+    <Setting Name="ProxyPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">xxxxxxxxxx</Value>
+    </Setting>
+    <Setting Name="dsn" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=localhost;Initial Catalog=POINTCARD;User ID=sa;Password=12345678;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=localhost;Initial Catalog=POINTCARD;User ID=sa;Password=12345678;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False</Value>
+    </Setting>
+    <Setting Name="Proxy" Type="System.String" Scope="User">
+      <Value Profile="(Default)">example.co.jp:80</Value>
+    </Setting>
+    <Setting Name="APIShopAuthUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/shop/auth</Value>
+    </Setting>
+    <Setting Name="APIHistoryUploadUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/history/upload</Value>
+    </Setting>
+    <Setting Name="ShopAuthLoginID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0002001</Value>
+    </Setting>
+    <Setting Name="ShopAuthPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Oa0528965511</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

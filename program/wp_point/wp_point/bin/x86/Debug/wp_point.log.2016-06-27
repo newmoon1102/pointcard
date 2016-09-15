@@ -1,0 +1,33 @@
+2016-06-27 09:44:48,816 [10] INFO  _wp_point.Rest.frmMain - アプリケーション - 開始
+2016-06-27 09:44:56,588 [10] INFO  _wp_point.Rest.frmLogin - Connect to api: https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/shop/auth
+2016-06-27 09:44:59,500 [10] INFO  _wp_point.Rest.frmLogin - 店舗認証に成功しました。
+2016-06-27 10:25:05,311 [9] INFO  _wp_point.Rest.frmMain - アプリケーション - 開始
+2016-06-27 10:26:04,543 [9] INFO  _wp_point.Rest.frmLogin - Connect to api: https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/shop/auth
+2016-06-27 10:26:06,670 [9] INFO  _wp_point.Rest.frmLogin - 店舗認証に成功しました。
+2016-06-27 10:26:55,492 [9] INFO  _wp_point.Rest.Reissue.frmCardNo - Connect to api: https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/get
+2016-06-27 10:27:01,900 [9] INFO  _wp_point.Rest.Reissue.frmCardNo - Connect to api: https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/get
+2016-06-27 10:27:02,232 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 開始
+2016-06-27 10:27:02,627 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 完了
+2016-06-27 10:27:31,377 [9] INFO  _wp_point.Rest.Reissue.frmCardNo - Connect to api: https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/get
+2016-06-27 10:28:40,800 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 開始
+2016-06-27 10:28:40,847 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 完了
+2016-06-27 10:31:15,900 [9] INFO  _wp_point.Rest.Reissue.frmSuccess - Connect to api: https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/set
+2016-06-27 10:31:29,452 [9] INFO  _wp_point.Rest.Reissue.frmCardNo - Connect to api: https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/get
+2016-06-27 10:31:36,318 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 開始
+2016-06-27 10:31:36,376 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 完了
+2016-06-27 10:32:44,435 [9] INFO  _wp_point.Rest.Reissue.frmCardNo - Connect to api: https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/get
+2016-06-27 10:32:44,620 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 開始
+2016-06-27 10:32:44,678 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 完了
+2016-06-27 10:32:55,035 [9] INFO  _wp_point.Rest.Reissue.frmCardNo - Connect to api: https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/get
+2016-06-27 10:32:55,210 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 開始
+2016-06-27 10:32:55,282 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 完了
+2016-06-27 10:34:02,210 [9] INFO  _wp_point.Rest.Reissue.frmCardNo - Connect to api: https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/get
+2016-06-27 10:34:02,508 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 開始
+2016-06-27 10:34:02,575 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 完了
+2016-06-27 10:34:11,869 [9] INFO  _wp_point.Rest.Reissue.frmCardNo - Connect to api: https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/get
+2016-06-27 10:34:12,060 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 開始
+2016-06-27 10:34:12,124 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 完了
+2016-06-27 10:34:29,685 [9] INFO  _wp_point.Rest.Reissue.frmSuccess - Connect to api: https://mng-dev-waitingpass.webimpact.co.jp/api/pointcard/member/set
+2016-06-27 10:34:34,558 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 開始
+2016-06-27 10:34:34,610 [9] INFO  _wp_point.Rest.Reissue.frmQRCodeInput - QR読込画面ロード - 完了
+2016-06-27 10:34:48,329 [9] INFO  _wp_point.Rest.frmMain - アプリケーション - 完了

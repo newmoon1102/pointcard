@@ -1,0 +1,8 @@
+C:\GitProject\maimon-suita\program\wp_point\WP_PCARDIF\bin\Release\WP_PCARDIF.exe.config
+C:\GitProject\maimon-suita\program\wp_point\WP_PCARDIF\bin\Release\WP_PCARDIF.exe
+C:\GitProject\maimon-suita\program\wp_point\WP_PCARDIF\bin\Release\WP_PCARDIF.pdb
+C:\GitProject\maimon-suita\program\wp_point\WP_PCARDIF\obj\x86\Release\WP_PCARDIF.exe
+C:\GitProject\maimon-suita\program\wp_point\WP_PCARDIF\obj\x86\Release\WP_PCARDIF.pdb
+C:\GitProject\maimon-suita\program\wp_point\WP_PCARDIF\bin\Release\log4net.dll
+C:\GitProject\maimon-suita\program\wp_point\WP_PCARDIF\bin\Release\log4net.xml
+C:\GitProject\maimon-suita\program\wp_point\WP_PCARDIF\obj\x86\Release\WP_PCARDIF.csprojResolveAssemblyReference.cache

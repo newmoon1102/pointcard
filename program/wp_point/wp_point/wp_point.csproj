@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64353060-7CEB-44B0-99A4-CED7E9638990}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_wp_point</RootNamespace>
+    <AssemblyName>wp_point</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CommandLine">
+      <HintPath>..\packages\CommandLineParser.1.9.71\lib\net40\CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.1\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Json">
+      <HintPath>..\packages\JsonValue.0.6.0\lib\40\Microsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Formatting">
+      <HintPath>..\packages\HttpClient.0.6.0\lib\40\Microsoft.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Server.Common">
+      <HintPath>..\packages\JsonValue.0.6.0\lib\40\Microsoft.Server.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\HttpClient.0.6.0\lib\40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.14.0.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.14.0.1\lib\net40\zxing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.14.0.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.14.0.1\lib\net40\zxing.presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="POINTCARDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POINTCARDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Class\Data.cs" />
+    <Compile Include="Rest\Class\MsgBox.cs" />
+    <Compile Include="Rest\Class\Win32.cs" />
+    <Compile Include="Rest\frmFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\frmFinish.Designer.cs">
+      <DependentUpon>frmFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\frmConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\frmConfirm.Designer.cs">
+      <DependentUpon>frmConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\frmHistoryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\frmHistoryView.Designer.cs">
+      <DependentUpon>frmHistoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\frmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\frmProgress.Designer.cs">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\frmQRCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\frmQRCode.Designer.cs">
+      <DependentUpon>frmQRCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\frmSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\frmSelect.Designer.cs">
+      <DependentUpon>frmSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Class\Common.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.log4net.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\ApiClient.cs" />
+    <Compile Include="Rest\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\frmList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\frmList.Designer.cs">
+      <DependentUpon>frmList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\frmSearch.Designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNR_Confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNR_Confirm.Designer.cs">
+      <DependentUpon>frmNR_Confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNR_CardNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNR_CardNo.Designer.cs">
+      <DependentUpon>frmNR_CardNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmCardNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmCardNo.Designer.cs">
+      <DependentUpon>frmCardNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNotRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNotRead.Designer.cs">
+      <DependentUpon>frmNotRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNR_InputProcess2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNR_InputProcess2.Designer.cs">
+      <DependentUpon>frmNR_InputProcess2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNR_InputProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNR_InputProcess.Designer.cs">
+      <DependentUpon>frmNR_InputProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNR_NewQRCodeInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNR_NewQRCodeInput.Designer.cs">
+      <DependentUpon>frmNR_NewQRCodeInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNR_QRCodeInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmNR_QRCodeInput.Designer.cs">
+      <DependentUpon>frmNR_QRCodeInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmQRCodeInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmQRCodeInput.Designer.cs">
+      <DependentUpon>frmQRCodeInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmReissue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmReissue.Designer.cs">
+      <DependentUpon>frmReissue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmReissueProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmReissueProcedure.Designer.cs">
+      <DependentUpon>frmReissueProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Reissue\frmSuccess.Designer.cs">
+      <DependentUpon>frmSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmCardNoRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmCardNoRead.Designer.cs">
+      <DependentUpon>frmCardNoRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmCardNotExist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmCardNotExist.Designer.cs">
+      <DependentUpon>frmCardNotExist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmChangeName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmChangeName.Designer.cs">
+      <DependentUpon>frmChangeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmDeleteConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmDeleteConfirm.Designer.cs">
+      <DependentUpon>frmDeleteConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmGuide_001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmGuide_001.Designer.cs">
+      <DependentUpon>frmGuide_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmGuide_002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmGuide_002.Designer.cs">
+      <DependentUpon>frmGuide_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmGuide_003.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmGuide_003.Designer.cs">
+      <DependentUpon>frmGuide_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmInfoConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmInfoConfirm.Designer.cs">
+      <DependentUpon>frmInfoConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmInputName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmInputName.Designer.cs">
+      <DependentUpon>frmInputName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmQRCodeRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmQRCodeRead.Designer.cs">
+      <DependentUpon>frmQRCodeRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmReplaceFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmReplaceFinish.Designer.cs">
+      <DependentUpon>frmReplaceFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmNewMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmNewMember.Designer.cs">
+      <DependentUpon>frmNewMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmOldMemeber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmOldMemeber.Designer.cs">
+      <DependentUpon>frmOldMemeber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmMemberID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmMemberID.Designer.cs">
+      <DependentUpon>frmMemberID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmselectQRCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmselectQRCode.Designer.cs">
+      <DependentUpon>frmselectQRCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Replace\frmWebQRCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rest\Replace\frmWebQRCode.Designer.cs">
+      <DependentUpon>frmWebQRCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rest\Request\MemberExportRepuest.cs" />
+    <Compile Include="Rest\Request\MemberImportRequest.cs" />
+    <Compile Include="Rest\Class\TcsPc100.cs" />
+    <Compile Include="Rest\Request\MemberMergeRequest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="POINTCARDDataSet.xsc">
+      <DependentUpon>POINTCARDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="POINTCARDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POINTCARDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="POINTCARDDataSet.xss">
+      <DependentUpon>POINTCARDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 4.5
+</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\frmFinish.resx">
+      <DependentUpon>frmFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\frmConfirm.resx">
+      <DependentUpon>frmConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\frmHistoryView.resx">
+      <DependentUpon>frmHistoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\frmList.resx">
+      <DependentUpon>frmList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\frmProgress.resx">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\frmQRCode.resx">
+      <DependentUpon>frmQRCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\frmSelect.resx">
+      <DependentUpon>frmSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\frmSearch.resx">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Reissue\frmNR_Confirm.resx">
+      <DependentUpon>frmNR_Confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Reissue\frmNR_CardNo.resx">
+      <DependentUpon>frmNR_CardNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Reissue\frmCardNo.resx">
+      <DependentUpon>frmCardNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Reissue\frmNotRead.resx">
+      <DependentUpon>frmNotRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Reissue\frmNR_InputProcess2.resx">
+      <DependentUpon>frmNR_InputProcess2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Reissue\frmNR_InputProcess.resx">
+      <DependentUpon>frmNR_InputProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Reissue\frmNR_NewQRCodeInput.resx">
+      <DependentUpon>frmNR_NewQRCodeInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Reissue\frmNR_QRCodeInput.resx">
+      <DependentUpon>frmNR_QRCodeInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Reissue\frmQRCodeInput.resx">
+      <DependentUpon>frmQRCodeInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Reissue\frmReissue.resx">
+      <DependentUpon>frmReissue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Reissue\frmReissueProcedure.resx">
+      <DependentUpon>frmReissueProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Reissue\frmSuccess.resx">
+      <DependentUpon>frmSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmCardNoRead.resx">
+      <DependentUpon>frmCardNoRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmCardNotExist.resx">
+      <DependentUpon>frmCardNotExist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmChangeName.resx">
+      <DependentUpon>frmChangeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmDeleteConfirm.resx">
+      <DependentUpon>frmDeleteConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmGuide_001.resx">
+      <DependentUpon>frmGuide_001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmGuide_002.resx">
+      <DependentUpon>frmGuide_002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmGuide_003.resx">
+      <DependentUpon>frmGuide_003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmInfoConfirm.resx">
+      <DependentUpon>frmInfoConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmInputName.resx">
+      <DependentUpon>frmInputName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmQRCodeRead.resx">
+      <DependentUpon>frmQRCodeRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmReplaceFinish.resx">
+      <DependentUpon>frmReplaceFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmNewMember.resx">
+      <DependentUpon>frmNewMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmOldMemeber.resx">
+      <DependentUpon>frmOldMemeber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmMemberID.resx">
+      <DependentUpon>frmMemberID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmselectQRCode.resx">
+      <DependentUpon>frmselectQRCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rest\Replace\frmWebQRCode.resx">
+      <DependentUpon>frmWebQRCode.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\05.png" />
+    <Content Include="Resources\06.png" />
+    <Content Include="Resources\07.png" />
+    <Content Include="Resources\08.png" />
+    <Content Include="Resources\09.png" />
+    <Content Include="Resources\10.png" />
+    <Content Include="Resources\yajirushi.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
